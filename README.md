@@ -1,2 +1,2 @@
-# pypypy
-"Learning Python the hard way" book examples
+# python-hard-way
+Working through "Learning Python the hard way" book
