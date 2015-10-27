@@ -17,7 +17,7 @@ def rewind(f):
 # define another funtion with tow arguments one being line count another file
 def print_a_line(line_count, f):
   # print in one line two values last being current line from file
-  print line_count, f.readline()
+  print line_count, f.readline(),
 
 # open the file
 current_file = open(input_file)
