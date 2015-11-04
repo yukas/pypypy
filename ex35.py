@@ -1,11 +1,15 @@
+# from module sys import function exit
 from sys import exit
 
 def gold_room():
   print "This room is full of gold. How much do you take?"
 
+  # grab user input and place it to next variable
   next = raw_input("> ")
 
+  # if next contains 0 or 1 inside it
   if "0" in next or "1" in next:
+    # convert what's inside next to integer
     how_much = int(next)
   else:
     dead("Man, learn to type a number.")
@@ -24,9 +28,12 @@ def bear_room():
 
   bear_moved = False
 
+  # infinite circle
   while True:
+    # ask user for input
     next = raw_input("> ")
 
+    # if input equals to string "take honey"
     if next == "take honey":
       dead("The bear looks at you then slaps your face off.")
     elif next == "taunt bear" and not bear_moved:
@@ -46,6 +53,7 @@ def cthulhu_room():
 
   next = raw_input("> ")
 
+  # if next contains string "flee" inside it
   if "flee" in next:
     start()
   elif "head" in next:
@@ -58,6 +66,8 @@ def dead(why):
   exit(0)
 
 def start():
+  """Start of the game"""
+
   print "You are in a dark room."
   print "There is a door to your right and left."
   print "Which one do you take?"
@@ -71,6 +81,4 @@ def start():
   else:
     dead("You stumble around the room until you strave.")
 
-
 start()
-    
