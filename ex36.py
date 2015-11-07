@@ -1,4 +1,30 @@
-def living_room():
+def corridor():
+  print "You entering carridor"
+  print "Where do you want to go next?"
+
+  next = raw_input("> ")
+
+
+def bathroom():
+
+
+def toilet():
+  
+def kitchen():
+
+def hallway():
+  print "You entering hallway."
+  print "What next?"
+  print "- Go to living room"
+  print "- Go to kitchen"
+
+  while True:
+    where = raw_import("> ")
+
+    if "living" in where:
+      living_room()
+
+def living_room1():
   print "You are entering living room."
   print "There is an old man sitting in a chair."
   print "What do you ask him?"
@@ -10,4 +36,6 @@ def living_room():
   else:
     print "You are rude!"
 
-living_room()
+def living_room2():
+
+def start():
