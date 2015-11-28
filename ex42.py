@@ -21,6 +21,8 @@ class Person(object):
     self.name = name
     # Person has a pet
     self.pet = None
+    self.friends = []
+    self.enimies = {}
 
 # Employee is a Person
 class Employee(Person):
@@ -52,6 +54,11 @@ mary.pet = satan
 
 frank = Employee("Frank", 120000)
 frank.pet = rover
+frank.friends.append("Eric")
+frank.enimies["worst"] = frank
+
+print frank.friends
+print frank.enimies
 
 flipper = Fish()
 crouse = Salmon()
